@@ -5,7 +5,7 @@ const bot = new Discord.Client();
 bot.once('ready', () => {
     console.log('Bot已啟動');
 
-    bot.user.setActivity('WIP Bot', {type: "PLAYING"}) //設定狀態 type: "playing/watching/listing/streaming"
+    bot.user.setActivity('伺服器專用Bot', {type: "PLAYING"}) //設定狀態 type: "playing/watching/listing/streaming"
     .then(presence => console.log(`Bot狀態設置為 ${presence.activities[0].type} ${presence.activities[0].name}`))
     .catch(console.error);
 
