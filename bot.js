@@ -9,9 +9,6 @@ bot.once('ready', () => {
     .then(presence => console.log(`Bot狀態設置為 ${presence.activities[0].type} ${presence.activities[0].name}`))
     .catch(console.error);
 
-    channel = bot.channels.cache.get("781197813069381652");
-    channel.send('Js測試機器人已上線');
-
 });
 
 bot.on('rateLimit', (info) => {
